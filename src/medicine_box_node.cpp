@@ -28,6 +28,7 @@ int main(int argc, char **argv)
     //1秒で時間割り込み
     ros::Timer timer = nh.createTimer(ros::Duration(1),sendState);
 
+    //待ち処理開始
     ros::spin();
 
     return 0;
